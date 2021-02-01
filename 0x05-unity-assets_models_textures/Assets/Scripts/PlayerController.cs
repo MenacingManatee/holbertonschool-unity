@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
 
         // Movement
         Vector3 movement = new Vector3(hAxis * dist, 0f, vAxis * dist);
+        movement = Camera.main.transform.TransformDirection(movement);
 
         // Current position
         Vector3 currPos = transform.position;
@@ -50,13 +51,11 @@ public class PlayerController : MonoBehaviour
         float jAxis = Input.GetAxis("Jump");
         bool isGrounded = CheckGrounded();
 
-        Debug.Log(isGrounded);
         if (jAxis > 0f) {
             if (!jumping && isGrounded) {
                 Vector3 jumpVect = new Vector3(0f, jumpSpd, 0f);
                 jumping = true;
                 rb.velocity = rb.velocity + jumpVect;
-                Debug.Log("Jumping");
             }
         }
         else {
