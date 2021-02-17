@@ -4436,7 +4436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801600cfa66307e46acc8338681e543a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpd: 20
+  walkSpd: 10
   jumpSpd: 10
 --- !u!54 &986392970
 Rigidbody:

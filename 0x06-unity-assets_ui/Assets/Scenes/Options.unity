@@ -885,6 +885,7 @@ GameObject:
   - component: {fileID: 1172122207}
   - component: {fileID: 1172122206}
   - component: {fileID: 1172122205}
+  - component: {fileID: 1172122209}
   m_Layer: 5
   m_Name: OptionsCanvas
   m_TagString: Untagged
@@ -978,6 +979,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1172122209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172122204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab6bf78c3ef7e054da5bc1374586df5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1229461650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,6 +1202,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1172122208}
     m_Modifications:
+    - target: {fileID: 1990281006492230047, guid: 41a001eb9324d8b4991b2e317ba1681f,
+        type: 3}
+      propertyPath: m_Text
+      value: Apply
+      objectReference: {fileID: 0}
     - target: {fileID: 4848647794283314006, guid: 41a001eb9324d8b4991b2e317ba1681f,
         type: 3}
       propertyPath: m_Pivot.x

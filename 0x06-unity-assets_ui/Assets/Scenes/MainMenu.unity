@@ -1200,6 +1200,7 @@ GameObject:
   - component: {fileID: 1791429386}
   - component: {fileID: 1791429385}
   - component: {fileID: 1791429384}
+  - component: {fileID: 1791429388}
   m_Layer: 5
   m_Name: MenuCanvas
   m_TagString: Untagged
@@ -1293,6 +1294,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1791429388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791429383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fc9062fa8ce6754b957b65330253ecf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1141549565545634259 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2294174525780361534, guid: 9b7ccb49d7023dc48b76047d5a8e5a48,

@@ -8,7 +8,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     // Walk speed of player
-    public float walkSpd = 20f;
+    public float walkSpd = 10f;
     // Jump speed of player
     public float jumpSpd = 10f;
     // Player rigidbody
