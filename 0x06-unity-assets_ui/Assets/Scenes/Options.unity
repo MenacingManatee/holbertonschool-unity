@@ -469,6 +469,11 @@ PrefabInstance:
       propertyPath: m_Text
       value: SFX
       objectReference: {fileID: 0}
+    - target: {fileID: 7358362445041587291, guid: 4600a9e112272b3408bb545c0ba971e9,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7358362445415300109, guid: 4600a9e112272b3408bb545c0ba971e9,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -969,8 +974,8 @@ RectTransform:
   - {fileID: 918186909}
   - {fileID: 938793112}
   - {fileID: 1229461651}
-  - {fileID: 806335091}
   - {fileID: 123237376}
+  - {fileID: 806335091}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1101,7 +1106,7 @@ PrefabInstance:
     - target: {fileID: 1558784834331899868, guid: 18d9c0472b7788349b679485f6ec9d1f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1558784834331899868, guid: 18d9c0472b7788349b679485f6ec9d1f,
         type: 3}
@@ -1220,7 +1225,7 @@ PrefabInstance:
     - target: {fileID: 4848647794283314006, guid: 41a001eb9324d8b4991b2e317ba1681f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4848647794283314006, guid: 41a001eb9324d8b4991b2e317ba1681f,
         type: 3}
