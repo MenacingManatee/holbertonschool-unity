@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -9,18 +10,25 @@ public class PauseMenu : MonoBehaviour
     public GameObject PauseCanvas;
     // Camera
     public GameObject cam;
-    // Timer script
-    private Timer script;
-    // Player controller script
-    private PlayerController controller;
     // Camera controller script
     private CameraController cc;
+    private Component[] optionButtons;
     // Start is called before the first frame update
     void Start()
     {
-        script = this.gameObject.GetComponent<Timer>();
-        controller = this.gameObject.GetComponent<PlayerController>();
         cc = cam.gameObject.GetComponent<CameraController>();
+        optionButtons = PauseCanvas.GetComponentsInChildren<Button>();
+        foreach (Component b in optionButtons) {
+            Button bu = b.GetComponent<Button>();
+            if (b.name.Substring(0, 6) == "Resume")
+                bu.onClick.AddListener(delegate{Resume();});
+            if (b.name.Substring(0, 7) == "Restart")
+                bu.onClick.AddListener(delegate{Restart();});
+            if (b.name.Substring(0, 4) == "Menu")
+                bu.onClick.AddListener(delegate{MainMenu();});
+            if (b.name.Substring(0, 7) == "Options")
+                bu.onClick.AddListener(delegate{Options();});
+        }
     }
 
     // Update is called once per frame
@@ -35,28 +43,34 @@ public class PauseMenu : MonoBehaviour
     }
     public void Pause()
     {
-        if (script && script.enabled == true) {
-            script.enabled = false;
-        }
-        if (controller && controller.enabled == true) {
-            controller.enabled = false;
-        }
         if (cc && cc.enabled == true) {
             cc.enabled = false;
         }
+        Time.timeScale = 0;
         PauseCanvas.SetActive(true);
     }
     public void Resume()
     {
-        if (script && script.enabled == false) {
-            script.enabled = true;
-        }
-        if (controller && controller.enabled == false) {
-            controller.enabled = true;
-        }
         if (cc && cc.enabled == false) {
             cc.enabled = true;
         }
+        Time.timeScale = 1;
         PauseCanvas.SetActive(false);
+    }
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Resume();
+    }
+    public void MainMenu()
+    {
+        Resume();
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void Options()
+    {
+        Resume();
+        PlayerPrefs.SetString("sceneHistory", SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Options");
     }
 }

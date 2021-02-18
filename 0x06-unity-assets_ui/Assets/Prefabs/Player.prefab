@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 8184365102857232950}
   - component: {fileID: 4931842257459849422}
   - component: {fileID: 6936312933667658992}
+  - component: {fileID: 3162749748153678288}
+  - component: {fileID: 2105312786076333647}
+  - component: {fileID: 5344067266155249609}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -94,3 +97,44 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3162749748153678288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6651580532560858872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c45bd5caf9d6824faccea4578650c2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauseCanvas: {fileID: 0}
+  cam: {fileID: 0}
+--- !u!114 &2105312786076333647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6651580532560858872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801600cfa66307e46acc8338681e543a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpd: 10
+  jumpSpd: 1
+--- !u!114 &5344067266155249609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6651580532560858872}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 025a2e1219214f9468becefbf791271a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Timer_Text: {fileID: 0}

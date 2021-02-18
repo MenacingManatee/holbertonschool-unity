@@ -4478,20 +4478,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7240269481438275073}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &986392966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986392965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 801600cfa66307e46acc8338681e543a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpd: 10
-  jumpSpd: 10
 --- !u!54 &986392970
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4508,11 +4494,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &986392972
+--- !u!114 &986392972 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5344067266155249609, guid: 1729259413003a049afcf928b1fa0dc8,
+    type: 3}
+  m_PrefabInstance: {fileID: 7240269481438275073}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986392965}
   m_Enabled: 0
@@ -4520,21 +4506,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 025a2e1219214f9468becefbf791271a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer_Text: {fileID: 1807778226}
---- !u!114 &986392973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986392965}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c45bd5caf9d6824faccea4578650c2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PauseCanvas: {fileID: 2050430908}
-  cam: {fileID: 2007105562}
 --- !u!1001 &991651691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9361,6 +9332,7 @@ MonoBehaviour:
   player: {fileID: 986392965}
   offset: {x: 0, y: 2.5, z: -6.25}
   rotationSpd: 5
+  isInverted: 0
 --- !u!4 &2007363358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1956013994245210128, guid: ffbdc411735c32844b1c94c7887508e2,
@@ -11091,6 +11063,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2105312786076333647, guid: 1729259413003a049afcf928b1fa0dc8,
+        type: 3}
+      propertyPath: jumpSpd
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3162749748153678288, guid: 1729259413003a049afcf928b1fa0dc8,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 2007105562}
+    - target: {fileID: 3162749748153678288, guid: 1729259413003a049afcf928b1fa0dc8,
+        type: 3}
+      propertyPath: PauseCanvas
+      value: 
+      objectReference: {fileID: 2050430908}
+    - target: {fileID: 5344067266155249609, guid: 1729259413003a049afcf928b1fa0dc8,
+        type: 3}
+      propertyPath: Timer_Text
+      value: 
+      objectReference: {fileID: 1807778226}
     - target: {fileID: 6651580532560858872, guid: 1729259413003a049afcf928b1fa0dc8,
         type: 3}
       propertyPath: m_Name
