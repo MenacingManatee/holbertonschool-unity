@@ -21,6 +21,11 @@ public class CameraController : MonoBehaviour
 
     }
 
+    void Update()
+    {
+        isInverted = PlayerPrefs.GetInt("isInverted") != 0;
+    }
+
     // Update is called once per frame
     void LateUpdate()
     {
@@ -34,7 +39,6 @@ public class CameraController : MonoBehaviour
         player.transform.Rotate(0, horizontal, 0);
 
         float newAngle = player.transform.eulerAngles.y;
-        Debug.Log(newAngle);
         Quaternion rotation = Quaternion.Euler(deltaVertical, newAngle, 0);
         transform.position = player.transform.position + (rotation * offset);
 
