@@ -396,7 +396,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 1d50f7ceb05ccc34dab996dd11fdfa73, type: 3}
+    m_Font: {fileID: 12800000, guid: ba9c0bfc689db894ba59a65a4e45762d, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -549,7 +549,7 @@ PrefabInstance:
     - target: {fileID: 8227076105873949077, guid: 18d9c0472b7788349b679485f6ec9d1f,
         type: 3}
       propertyPath: m_Name
-      value: MenuText
+      value: NextText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18d9c0472b7788349b679485f6ec9d1f, type: 3}
