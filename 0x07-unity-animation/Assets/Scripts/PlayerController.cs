@@ -15,21 +15,26 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private Collider coll;
     private bool jumping = false;
+    private Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
 
         coll = GetComponent<Collider>();
+
+        animator = this.transform.GetChild(0).GetComponent<Animator>();
     }
 
     void Update() {
-        MovementHandler();
+        if (Camera.main != null) {
+            MovementHandler();
 
-        JumpHandler();
-        if (transform.position.y < -30) {
-            transform.position = new Vector3(0, 50, 0);
-            rb.velocity = new Vector3(0, -15, 0);
+            JumpHandler();
+            if (transform.position.y < -30) {
+                transform.position = new Vector3(0, 50, 0);
+                rb.velocity = new Vector3(0, -15, 0);
+            }
         }
     }
 
@@ -46,6 +51,11 @@ public class PlayerController : MonoBehaviour
         Vector3 currPos = transform.position;
 
         rb.MovePosition(currPos + movement);
+        float temp = (Mathf.Max(movement.x, movement.y, movement.z));
+        if (temp != 0)
+            animator.SetBool("IsRunning", true);
+        else
+            animator.SetBool("IsRunning", false);
     }
 
     void JumpHandler() {
@@ -62,6 +72,7 @@ public class PlayerController : MonoBehaviour
         else {
             jumping = false;
         }
+        animator.SetBool("IsJumping", jumping);
     }
 
     bool CheckGrounded() {

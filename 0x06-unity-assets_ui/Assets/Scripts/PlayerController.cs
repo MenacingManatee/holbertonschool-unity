@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
         float hAxis = Input.GetAxis("Horizontal");
         float vAxis = Input.GetAxis("Vertical");
         float dist = walkSpd * Time.deltaTime;
+        Debug.Log("Test");
 
         // Movement
         Vector3 movement = new Vector3(hAxis * dist, 0f, vAxis * dist);
