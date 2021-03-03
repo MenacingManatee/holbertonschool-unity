@@ -34,7 +34,11 @@ public class PlayerController : MonoBehaviour
             if (transform.position.y < -30) {
                 transform.position = new Vector3(0, 50, 0);
                 rb.velocity = new Vector3(0, -15, 0);
+                animator.SetBool("IsFalling", true);
             }
+            if (animator.GetBool("IsFalling") == true)
+                if (CheckGrounded() == true)
+                    animator.SetBool("IsFalling", false);
         }
     }
 

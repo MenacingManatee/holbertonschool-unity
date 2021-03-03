@@ -942,6 +942,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2000531590}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &404029000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5964413746165179696, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179696, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179696, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 53.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179696, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179696, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99691737
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179696, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.078459114
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179696, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179696, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179696, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179696, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179696, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179700, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_Name
+      value: CutsceneCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179710, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: MainC
+      value: 
+      objectReference: {fileID: 2007105562}
+    - target: {fileID: 5964413746165179710, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 986392965}
+    - target: {fileID: 5964413746165179710, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: TimerCanvas
+      value: 
+      objectReference: {fileID: 1269182465}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ba8d98d9913649b43820e5d2e329f648, type: 3}
 --- !u!4 &424017526 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2354833794791380189, guid: fc48a6169f3cb634a86f5e848fc27b22,
@@ -2829,6 +2913,12 @@ Transform:
   m_Father: {fileID: 1920390844}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!223 &1269182465 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 4340119414139285096, guid: 5370e513dc8b7724d91005df2902d653,
+    type: 3}
+  m_PrefabInstance: {fileID: 3579683253580417243}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1269552775
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4510,7 +4600,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &2007105563
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5386,6 +5476,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TimerCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5231502428887165720, guid: 5370e513dc8b7724d91005df2902d653,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5370e513dc8b7724d91005df2902d653, type: 3}
