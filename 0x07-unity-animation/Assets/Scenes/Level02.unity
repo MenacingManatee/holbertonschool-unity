@@ -1009,6 +1009,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CutsceneCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 5964413746165179701, guid: ba8d98d9913649b43820e5d2e329f648,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 370ac5bfbcd8aa0479ea4d4aa12b7f83, type: 2}
     - target: {fileID: 5964413746165179710, guid: ba8d98d9913649b43820e5d2e329f648,
         type: 3}
       propertyPath: MainC
