@@ -9,6 +9,8 @@ public class WinTrigger : MonoBehaviour
     public Text winText;
     // Win canvas
     public GameObject WinCanvas;
+    // BGM
+    public AudioSource BGM;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,7 @@ public class WinTrigger : MonoBehaviour
         script.enabled = false;
         cam.enabled = false;
         Time.timeScale = 0;
+        BGM.Stop();
         // winText.color = Color.green;
         // winText.fontSize = 70;
         WinCanvas.SetActive(true);
