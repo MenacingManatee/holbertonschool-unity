@@ -33,6 +33,8 @@ public class WinMenu : MonoBehaviour
     public void Next()
     {
         string NextScene = SceneManager.GetActiveScene().name;
+
+        Time.timeScale = 1;
         NextScene = NextScene.Substring(0, 6) + (int.Parse(NextScene.Substring(6)) + 1).ToString();
         if (Application.CanStreamedLevelBeLoaded(NextScene))
         {

@@ -24,8 +24,11 @@ public class WinTrigger : MonoBehaviour
 
     void OnTriggerEnter(Collider other) {
         Timer script = other.gameObject.GetComponent<Timer>();
+        CameraController cam = Camera.main.GetComponent<CameraController>();
         script.Win();
         script.enabled = false;
+        cam.enabled = false;
+        Time.timeScale = 0;
         // winText.color = Color.green;
         // winText.fontSize = 70;
         WinCanvas.SetActive(true);

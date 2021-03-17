@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     private Collider coll;
     private bool jumping = false;
     private Animator animator;
+    private bool isGrounded;
+    private bool freezeMovement = false;
+    private PlaySteps script;
 
     void Start()
     {
@@ -24,10 +27,14 @@ public class PlayerController : MonoBehaviour
         coll = GetComponent<Collider>();
 
         animator = this.transform.GetChild(0).GetComponent<Animator>();
+
+        script = GetComponentInChildren<PlaySteps>();
     }
 
     void Update() {
-        if (Camera.main != null) {
+        isGrounded = CheckGrounded();
+        freezeMovement = animator.GetBool("IsFalling");
+        if (Camera.main != null && !freezeMovement) {
             MovementHandler();
 
             JumpHandler();
@@ -36,10 +43,10 @@ public class PlayerController : MonoBehaviour
                 rb.velocity = new Vector3(0, -15, 0);
                 animator.SetBool("IsFalling", true);
             }
-            if (animator.GetBool("IsFalling") == true)
-                if (CheckGrounded() == true)
-                    animator.SetBool("IsFalling", false);
         }
+        if (animator.GetBool("IsFalling") == true)
+            if (isGrounded == true)
+                animator.SetBool("IsFalling", false);
     }
 
     void MovementHandler() {
@@ -56,15 +63,16 @@ public class PlayerController : MonoBehaviour
 
         rb.MovePosition(currPos + movement);
         float temp = (Mathf.Max(movement.x, movement.y, movement.z));
-        if (temp != 0)
+        if (temp != 0) {
             animator.SetBool("IsRunning", true);
-        else
+        }
+        else {
             animator.SetBool("IsRunning", false);
+        }
     }
 
     void JumpHandler() {
         float jAxis = Input.GetAxis("Jump");
-        bool isGrounded = CheckGrounded();
 
         if (jAxis > 0f) {
             if (!jumping && isGrounded) {
@@ -74,7 +82,7 @@ public class PlayerController : MonoBehaviour
             }
         }
         else {
-            jumping = false;
+            jumping = !isGrounded;
         }
         animator.SetBool("IsJumping", jumping);
     }
@@ -83,5 +91,12 @@ public class PlayerController : MonoBehaviour
         RaycastHit rayHit;
         return (Physics.SphereCast(transform.position, coll.bounds.size.x / 2,
                 Vector3.down, out rayHit, coll.bounds.size.y / 2));
+    }
+    void OnCollisionEnter(Collision other) {
+        string tmp = other.gameObject.tag;
+
+        if (script != null && tmp != null && (tmp == "Rocky" || tmp == "Grassy")) {
+            script.stepType = tmp;
+        }
     }
 }
