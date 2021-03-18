@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class PauseMenu : MonoBehaviour
     // Camera controller script
     private CameraController cc;
     private Component[] optionButtons;
+    public AudioMixerSnapshot Unpaused;
+    public AudioMixerSnapshot Paused;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +51,7 @@ public class PauseMenu : MonoBehaviour
         }
         Time.timeScale = 0;
         PauseCanvas.SetActive(true);
+        Paused.TransitionTo(0.1f);
     }
     public void Resume()
     {
@@ -56,6 +60,7 @@ public class PauseMenu : MonoBehaviour
         }
         Time.timeScale = 1;
         PauseCanvas.SetActive(false);
+        Unpaused.TransitionTo(0.1f);
     }
     public void Restart()
     {

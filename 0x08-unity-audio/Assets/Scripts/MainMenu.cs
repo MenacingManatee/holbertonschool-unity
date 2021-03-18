@@ -8,6 +8,8 @@ public class MainMenu : MonoBehaviour
 {
     // Buttons on canvas
     private Component[] buttons;
+    public AudioSource bgm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,13 @@ public class MainMenu : MonoBehaviour
             else if (b.name.Substring(0, 4) == "Exit")
                 bu.onClick.AddListener(delegate{ExitGame();});
         }
+        GameObject[] bgms = GameObject.FindGameObjectsWithTag("BGM");
+        if (bgms.Length > 1)
+        {
+            for (var i = 1; i < bgms.Length; i++) {
+                Destroy(bgms[i].gameObject);
+            }
+        }
     }
 
     // Update is called once per frame
@@ -30,10 +39,17 @@ public class MainMenu : MonoBehaviour
     }
     public void LevelSelect(int level)
     {
+        if (bgm != null)
+            bgm.Stop();
+        GameObject[] bgms = GameObject.FindGameObjectsWithTag("BGM");
+            if (bgms.Length != 0)
+                Destroy(bgms[0].gameObject);
         SceneManager.LoadScene("Level0" + level.ToString());
     }
     public void Options()
     {
+        if (bgm != null)
+            DontDestroyOnLoad(bgm);
         PlayerPrefs.SetString("sceneHistory", SceneManager.GetActiveScene().name);
         SceneManager.LoadScene("Options");
     }

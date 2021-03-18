@@ -1344,7 +1344,7 @@ GameObject:
   - component: {fileID: 1736405356}
   m_Layer: 0
   m_Name: Wallpaper
-  m_TagString: Untagged
+  m_TagString: BGM
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1578,6 +1578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fc9062fa8ce6754b957b65330253ecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgm: {fileID: 1736405356}
 --- !u!224 &1141549565545634259 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2294174525780361534, guid: 9b7ccb49d7023dc48b76047d5a8e5a48,

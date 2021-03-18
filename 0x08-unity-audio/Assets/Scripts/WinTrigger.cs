@@ -11,6 +11,8 @@ public class WinTrigger : MonoBehaviour
     public GameObject WinCanvas;
     // BGM
     public AudioSource BGM;
+    // Win sting
+    public AudioSource winSting;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,7 @@ public class WinTrigger : MonoBehaviour
         cam.enabled = false;
         Time.timeScale = 0;
         BGM.Stop();
+        winSting.Play();
         // winText.color = Color.green;
         // winText.fontSize = 70;
         WinCanvas.SetActive(true);
