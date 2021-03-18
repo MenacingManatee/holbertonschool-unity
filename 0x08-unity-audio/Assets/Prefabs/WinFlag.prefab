@@ -109,6 +109,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winText: {fileID: 0}
+  WinCanvas: {fileID: 0}
+  BGM: {fileID: 0}
+  winSting: {fileID: 0}
 --- !u!1001 &7160700497731002583
 PrefabInstance:
   m_ObjectHideFlags: 0

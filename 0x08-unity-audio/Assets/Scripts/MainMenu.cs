@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class MainMenu : MonoBehaviour
 {
     // Buttons on canvas
     private Component[] buttons;
     public AudioSource bgm;
+    public AudioMixer Mixer;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,12 @@ public class MainMenu : MonoBehaviour
             for (var i = 1; i < bgms.Length; i++) {
                 Destroy(bgms[i].gameObject);
             }
+        }
+        if (PlayerPrefs.HasKey("BGMVolume")) {
+            Mixer.SetFloat("BGM", SetVolume(PlayerPrefs.GetFloat("BGMVolume")));
+        }
+        if (PlayerPrefs.HasKey("SFXVolume")) {
+            Mixer.SetFloat("SFX", SetVolume(PlayerPrefs.GetFloat("SFXVolume")));
         }
     }
 
@@ -57,5 +65,13 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Exited");
+    }
+    public float SetVolume (float sliderValue) {
+        float db;
+        if (sliderValue != 0)
+            db = 20.0f * Mathf.Log10(sliderValue);
+        else
+            db = -144.0f;
+        return (db);
     }
 }

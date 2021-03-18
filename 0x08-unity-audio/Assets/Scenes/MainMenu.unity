@@ -1579,6 +1579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgm: {fileID: 1736405356}
+  Mixer: {fileID: 24100000, guid: 265d7f2b90202914bb7e772ffe682ae3, type: 2}
 --- !u!224 &1141549565545634259 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2294174525780361534, guid: 9b7ccb49d7023dc48b76047d5a8e5a48,
