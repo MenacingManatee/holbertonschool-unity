@@ -133,6 +133,8 @@ GameObject:
   - component: {fileID: 122786998}
   - component: {fileID: 122786999}
   - component: {fileID: 122787000}
+  - component: {fileID: 122787001}
+  - component: {fileID: 122787002}
   m_Layer: 0
   m_Name: Email
   m_TagString: clickable
@@ -230,6 +232,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce3209a849fda842a827a443fa49de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &122787001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122786996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be13fb86c9e93e4e842cd4b5c8838b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toHighlight: {fileID: 2059978006}
+--- !u!95 &122787002
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122786996}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 23bdbc785b8805a429efbada27f6d5bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!21 &204666992
 Material:
   serializedVersion: 6
@@ -538,6 +572,7 @@ GameObject:
   - component: {fileID: 448040441}
   - component: {fileID: 448040442}
   - component: {fileID: 448040443}
+  - component: {fileID: 448040444}
   m_Layer: 0
   m_Name: Medium
   m_TagString: clickable
@@ -648,6 +683,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toHighlight: {fileID: 764518730}
+--- !u!95 &448040444
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448040438}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a05d6f7d9502eb428efd1adb6592784, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &479025181
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,7 +839,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.7176471, g: 0.18823531, b: 0.16470589, a: 1}
+  m_Color: {r: 0.7019608, g: 0.21176472, b: 0.18823531, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -958,7 +1012,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.7176471, g: 0.18823531, b: 0.16470589, a: 1}
+  m_Color: {r: 0.68235296, g: 0.19215688, b: 0.16862746, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1101,6 +1155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1071204259}
+  - component: {fileID: 1071204260}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -1124,6 +1179,25 @@ Transform:
   m_Father: {fileID: 1608734511}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1071204260
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071204258}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8ef28eba7f4dd55469d8d1f9a4c92b3d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1416085004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1210,8 @@ GameObject:
   - component: {fileID: 1416085006}
   - component: {fileID: 1416085007}
   - component: {fileID: 1416085008}
+  - component: {fileID: 1416085009}
+  - component: {fileID: 1416085010}
   m_Layer: 0
   m_Name: LinkedIn
   m_TagString: clickable
@@ -1151,7 +1227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1416085004}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -110, y: -0, z: 28.9}
+  m_LocalPosition: {x: -110, y: 0, z: 28.9}
   m_LocalScale: {x: 12, y: 12, z: 1}
   m_Children:
   - {fileID: 563843488}
@@ -1233,6 +1309,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce3209a849fda842a827a443fa49de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1416085009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416085004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be13fb86c9e93e4e842cd4b5c8838b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toHighlight: {fileID: 563843487}
+--- !u!95 &1416085010
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416085004}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5c10bd622b13a5348bddce87bd32d172, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1608734505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,6 +1654,8 @@ GameObject:
   - component: {fileID: 2031184756}
   - component: {fileID: 2031184757}
   - component: {fileID: 2031184758}
+  - component: {fileID: 2031184759}
+  - component: {fileID: 2031184760}
   m_Layer: 0
   m_Name: GitHub
   m_TagString: clickable
@@ -1643,6 +1753,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce3209a849fda842a827a443fa49de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2031184759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031184754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be13fb86c9e93e4e842cd4b5c8838b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toHighlight: {fileID: 434222856}
+--- !u!95 &2031184760
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031184754}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2336a4148165e394a87bdd16cc943119, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2059978006
 GameObject:
   m_ObjectHideFlags: 0
