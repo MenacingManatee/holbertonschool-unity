@@ -8,7 +8,7 @@ public class InputManager : MonoBehaviour
 {
     public ARPlaneManager planeManager;
     public ARRaycastManager raycastManager;
-    private ARPlane plane;
+    public ARPlane plane;
     public Camera AR_Camera;
     public GameObject searchPanel;
     public GameObject selectPanel;
