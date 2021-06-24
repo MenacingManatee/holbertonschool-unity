@@ -1,11 +1,12 @@
-# holbertonschool-unity
+# HolbertonSchool Unity
 
 ## About / synopsis
-A short paragraph describing the project / repository
+This repo contains a collection of projects made in unity, excluding the larger-scale projects which have their own repos
 
 ## Built With
 
-* [placeholder] - The language / framework / etc used
+* [Unity] - Version 2019.4
+* [C#]
 
 ### Project contents
 
