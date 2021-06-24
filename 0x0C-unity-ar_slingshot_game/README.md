@@ -1,4 +1,26 @@
-# holbertonschool-unity
+# 0x0C Unity AR Slingshot Game
+
+## About / synopsis
+A short paragraph describing the project / repository
+
+## Built With
+
+* [placeholder] - The language / framework / etc used
+
+### Project contents
+
+| Project Title | Short Description |
+| --- | --- |
+|***|***|
+|***|***|
+|***|***|
+|***|***|
+|***|***|
+|***|***|
+|***|***|
+|***|***|
+|***|***|
+|***|***|
 
 ## Credits
 Corona by Alexander Nakarada | https://www.serpentsoundstudios.com
