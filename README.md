@@ -1,7 +1,7 @@
 # HolbertonSchool Unity
 
 ## About / synopsis
-This repo contains a collection of projects made in unity, excluding the larger-scale projects which have their own repos
+This repo contains a collection of projects made in unity as part of school projects, excluding some of the larger-scale projects which have their own repos
 
 ## Built With
 
