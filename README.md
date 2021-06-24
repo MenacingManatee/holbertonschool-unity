@@ -24,6 +24,9 @@ This repo contains a collection of projects made in unity, excluding the larger-
 
 ### See Also:
 [Unity VR Room](https://github.com/MenacingManatee/0x0B-unity-vr_room): A small puzzle game created in VR for Oculus
+
 [Unity 360 Video Tour](https://github.com/MenacingManatee/0x0A-unity-360_video_tour): A 360 video tour of a holberton campus
+
 [0x02 Unity Scripting](https://github.com/MenacingManatee/0x02-unity-scripting): Introduction to using C# scripts with Unity
+
 [0x03 Unity UI](https://github.com/MenacingManatee/0x03-unity-ui): Introduction to creation of UI in Unity
