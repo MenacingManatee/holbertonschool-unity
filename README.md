@@ -30,3 +30,6 @@ This repo contains a collection of projects made in unity as part of school proj
 [0x02 Unity Scripting](https://github.com/MenacingManatee/0x02-unity-scripting): Introduction to using C# scripts with Unity
 
 [0x03 Unity UI](https://github.com/MenacingManatee/0x03-unity-ui): Introduction to creation of UI in Unity
+
+### About Me
+I am a student software engineer, currently studying at Holberton School. My interests are in VR and game development, and I'd like to create my own VR game company within the next 10 years. See more about me on my [LinkedIn](https://www.linkedin.com/in/brett-davis-132916155/)
