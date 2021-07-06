@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5628603665186574618
+--- !u!114 &-602957004432678364
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ice
-  m_Shader: {fileID: -6465566751694194690, guid: 8586d34afbcf2f6458d144c0be545b5c,
+  m_Name: hologram
+  m_Shader: {fileID: -6465566751694194690, guid: 1b2155fbbcf2eb147a1eb943245707cd,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -33,6 +33,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_C09E3C3F:
+        m_Texture: {fileID: 2800000, guid: 571df11b80bab224e85866eb9e557fa3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -62,12 +66,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_24C9AD86: 0
-    - Vector1_59B65C52: 3
-    - Vector1_7E9F7303: 0.134
-    - Vector1_8D6889B2: 501
-    - Vector1_CD374CDD: -3
-    - Vector1_DE43398F: 0.5
+    - Vector1_3E48E232: 0.5
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -90,8 +89,9 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_31571E1: {r: 0.8634745, g: 1.8490566, b: 1.722468, a: 0}
-    - Color_939F7343: {r: 1, g: 1, b: 1, a: 0}
+    - Color_28F0FD8B: {r: 16, g: 8.909804, b: 0, a: 0}
+    - Color_3B432193: {r: 0.093871, g: 1, b: 0, a: 0}
+    - Vector2_BB4117E6: {r: 1, g: 5, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
