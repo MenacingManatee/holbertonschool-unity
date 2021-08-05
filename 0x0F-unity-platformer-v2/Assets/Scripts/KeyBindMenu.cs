@@ -51,15 +51,7 @@ public class KeyBindMenu : MonoBehaviour
     }
     public void Back()
     {
-        string prevScene = PlayerPrefs.GetString("sceneHistory");
-
-        if (string.IsNullOrEmpty(prevScene))
-            prevScene = "MainMenu";
-        if (prevScene == "MainMenu") {
-            if (bgm != null)
-                DontDestroyOnLoad(bgm);
-        }
-        SceneManager.LoadScene(prevScene);
+        SceneManager.LoadScene("Options");
     }
     public void SetDefaults()
     {
